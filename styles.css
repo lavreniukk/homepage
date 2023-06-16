@@ -171,14 +171,67 @@ body {
 }
 
 .skills__header {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    font-size: 28px;
     color: var(--secondary-text-color);
     text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.skills_sub-header {
+    font-size: large;
+    color: var(--primary-text-color);
     margin-bottom: 15px;
 }
 
 .skills__text {
     color: var(--secondary-text-color);
     text-align: left;
+}
+
+.skills__text:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.skills__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+}
+
+.skills__skill-container {
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.skills__icon {
+    width: 125px;
+    border-radius: 50%;
+    filter:  grayscale(100%);
+    transition: filter 500ms ease-in-out;
+}
+
+.skills__skill-container > span {
+    text-align: center;
+    color: var(--primary-text-color);
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+.skills__skill-container:hover > span {
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+}
+
+.skills__skill-container:hover .skills__icon {
+    filter: grayscale(0);
+    transition: filter 500ms ease-in-out;
 }
 
 .experiences {
@@ -297,6 +350,10 @@ body {
 
     .intro__icon-wrapper {
         margin-right: 10px;
+    }
+
+    .skills__container {
+        flex: 50%;
     }
 
     .experiences {
