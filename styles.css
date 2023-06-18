@@ -417,7 +417,7 @@ body {
     margin-bottom: 25px;
 }
 
-.interests-info__music-text {
+.interests-info__text {
     color: var(--primary-text-color);
     font-size: 22px;
     text-align: left;
@@ -439,7 +439,7 @@ body {
         transform: scale(1, 1);
     }
     30%, 90% {
-        transform: scale(0.92, 0.95);
+        transform: scale(0.88, 0.92);
     }
 }
 
@@ -447,7 +447,25 @@ body {
     animation: 1.5s ease-in-out 0s infinite pulse;
 }
 
+.interests-info__guitar-wrapper {
+    display: flex;
+    margin: 0 auto;
+    border: 4px solid var(--secondary-text-color);
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 25px;
+}
+
+.interests-info__guitar-video {
+    width: 100%;
+    filter: grayscale(100%);
+}
+
 @media screen and (max-width: 576px) {
+    .resume {
+        border-left: 0px;
+    }
+    
     .main-info,
     .contact_info_container {
         flex-direction: column;
