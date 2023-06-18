@@ -279,26 +279,26 @@ body {
 
 .skills__icon {
     width: 125px;
-    border-radius: 50%;
+    border-radius: 15px;
     filter:  grayscale(100%);
-    transition: filter 500ms ease-in-out;
+    transition: filter 350ms ease-in-out;
 }
 
 .skills__skill-container > span {
     text-align: center;
     color: var(--secondary-text-color);
     opacity: 0;
-    transition: opacity 500ms ease-in-out;
+    transition: opacity 350ms ease-in-out;
 }
 
 .skills__skill-container:hover > span {
     opacity: 1;
-    transition: opacity 500ms ease-in-out;
+    transition: opacity 350ms ease-in-out;
 }
 
 .skills__skill-container:hover .skills__icon {
     filter: grayscale(0);
-    transition: filter 500ms ease-in-out;
+    transition: filter 350ms ease-in-out;
 }
 
 .experiences__header {
@@ -465,7 +465,7 @@ body {
     .resume {
         border-left: 0px;
     }
-    
+
     .main-info,
     .contact_info_container {
         flex-direction: column;
