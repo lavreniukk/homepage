@@ -11,6 +11,7 @@ body {
 
     --primary-text-color: #d5d5d5;
     --secondary-text-color: #d1922c;
+    --secondary-text-hover: #e5b75b;
     --durability-text-color: #d1922c;
 }
 
@@ -322,7 +323,7 @@ body {
 
 .experiences__project {
     margin-left: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
 }
 
 .experiences__project-role {
@@ -341,6 +342,29 @@ body {
 .experiences__project-responsibilities {
     color: var(--primary-text-color);
     padding-left: 20px;
+}
+
+.experiences__project-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 40px;
+}
+
+.experiences__project-link {
+    color: var(--secondary-text-color);
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 150ms ease-in-out;
+}
+
+.experiences__project-link:hover {
+    color: var(--secondary-text-hover);
+    transition: all 150ms ease-in-out;
+}
+
+.experiences__project-link i {
+    margin-right: 10px;
 }
 
 .additional-info {
